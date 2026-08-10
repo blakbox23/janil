@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
+  outputFileTracingRoot: process.cwd(),
+  turbopack: {
+    root: process.cwd(),
   },
   images: {
     unoptimized: true,
   },
+  allowedDevOrigins: ['10.215.250.198'],
 }
 
 export default nextConfig
